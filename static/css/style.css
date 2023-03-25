@@ -53,6 +53,17 @@ h2 {
 	font-size: 1.4em;
 }
 
+/*h2::before {
+	position: absolute;
+	top: 4px;
+	left: -18px;
+	line-height: 1.8ex;
+	font-size: 1.3rem;
+	white-space: pre;
+	color: #ccc;
+	content: "#";
+}*/
+
 h3{
 	border-bottom: 2px solid #f0f0f0;
 	font-size: 1.3em;
