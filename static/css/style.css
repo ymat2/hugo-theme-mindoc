@@ -4,7 +4,7 @@
     --color-text: #444;
     --emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Sans Emoji';
     --serif: Palatino, serif, var(--emoji);
-    --sans-serif: system-ui, -apple-system, "Segoe UI", "Yu Gothic Medium", "Hiragino Sans", "Meiryo", sans-serif, var(--emoji);
+    --sans-serif: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Yu Gothic Medium", "Hiragino Sans", "Meiryo", sans-serif, var(--emoji);
     --monospace: Menlo, Consolas, Monaco, 'DejaVu Sans Mono', monospace, var(--emoji);
 }
 
@@ -34,13 +34,6 @@ main {
 	box-shadow: 0 2px 5px 1px #c0c0c0; /*google_search_box_like*/
 }
 
-h2, h3, h4, h5, h6 {
-	font-weight: 400;
-	font-size: 1.2em;
-	margin-top: 1.33em;
-	margin-bottom: 1em;
-}
-
 h1 {
 	font-weight: 600;
 	font-size: 1.5em;
@@ -53,20 +46,16 @@ h2 {
 	font-size: 1.4em;
 }
 
-/*h2::before {
-	position: absolute;
-	top: 4px;
-	left: -18px;
-	line-height: 1.8ex;
-	font-size: 1.3rem;
-	white-space: pre;
-	color: #ccc;
-	content: "#";
-}*/
-
 h3{
 	border-bottom: 2px solid #f0f0f0;
 	font-size: 1.3em;
+}
+
+h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	font-size: 1.2em;
+	margin-top: 1.33em;
+	margin-bottom: 1em;
 }
 
 ol, ul {
@@ -142,8 +131,8 @@ pre {
 }
 
 pre code {
-	background-color: transparent;
-	padding: 0px;
+	background-color: transparent !important;
+	padding: 0px !important;
 }
 
 table{
