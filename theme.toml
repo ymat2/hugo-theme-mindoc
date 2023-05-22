@@ -3,7 +3,7 @@
 
 name = "hugo-theme-mindoc"
 license = "MIT"
-licenselink = "https://github.com/ymat2/hugo-theme-minpdoc/LICENSE"
+licenselink = "https://github.com/ymat2/hugo-theme-mindoc/LICENSE"
 description = "A simple theme of hugo for documentation"
 tags = ["Minimal", "Docs"]
 features = []
@@ -12,4 +12,3 @@ min_version = "0.41.0"
 [author]
 name = "ymat2"
 homepage = ""
-

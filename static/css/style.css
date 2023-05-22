@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 :root {
 	--color-text: #444;
 	--emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Sans Emoji';
@@ -8,10 +7,19 @@
 	--monospace: Menlo, Consolas, Monaco, 'DejaVu Sans Mono', monospace, var(--emoji);
 }
 
+@font-face {
+	font-family: "Yu Gothic Medium";
+	src: local("Yu Gothic Medium");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Yu Gothic Medium";
+	src: local("Yu Gothic Bold");
+	font-weight: bold;
+}
 
 html {
-	line-height: 1.4;
-	font-family: var(--sans-serif);
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 }
@@ -19,6 +27,9 @@ html {
 body {
 	margin:20px auto;
 	max-width: 800px;
+	line-height: 1.4;
+	color: var(--color-text);
+	font-family: var(--sans-serif);
 	hyphens: auto;
 	overflow-wrap: break-word;
 	text-rendering: optimizeLegibility;
@@ -123,6 +134,7 @@ blockquote {
 code {
 	font-family: var(--monospace);
 	font-size: 85%;
+	tab-size: 4;
 	padding: 0.2em 0.4em;
 	background-color: #f1f1f1;
 	border-radius: 0.2em;
