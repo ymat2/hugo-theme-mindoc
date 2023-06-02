@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ partial "head.html" . }}
 
 <body
   lang="{{ .Site.LanguageCode }}"
@@ -14,7 +14,7 @@
     >HOME</a
   >
   <span class="b"> / </span>
-  <a 
+  <a
   	href="{{ .Site.BaseURL  }}/{{ .Parent.Section }}"
   	class="pagelink"
   	>{{ .CurrentSection.Title }}</a

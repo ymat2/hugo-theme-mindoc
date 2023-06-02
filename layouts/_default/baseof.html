@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    {{- partial "header.html" . -}}
+{{- partial "head.html" . -}}
     <div id="content">{{- block "main" . }}{{ -end }}</div>
     {{- partial "footer.html" . -}}
   </body>

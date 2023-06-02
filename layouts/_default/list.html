@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ partial "head.html" . }}
 
 <body
   lang="{{ .Site.LanguageCode }}"
@@ -12,7 +12,7 @@
   >
   <main>
   <section id="main" class="mt5">
-  	<h1> 
+  	<h1>
   		{{ .Title }}
   	</h1>
   	<article itemprop="articleBody" id="content" class="w-90 lh-copy">
@@ -20,16 +20,16 @@
 	</article>
     <div>
       <ul id="list" class="pl0">
-      
+
         {{ range .Data.Pages.ByTitle }}
         <li class="list pl0 lh-copy">
           <a
             class="pagelink"
-            href="{{ .RelPermalink}}"
+            href="{{ .RelPermalink }}"
             >{{ .Title }}</a
           >
         </li>
-        
+
         {{ end }}
       </ul>
     </div>
@@ -39,4 +39,3 @@
   {{ partial "footer.html" . }}
   </body>
 </html>
-
