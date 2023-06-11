@@ -7,13 +7,13 @@
   itemtype="http://schema.org/Article"
 >
   {{ $baseurl := .Site.BaseURL }}
-  <span class="b">/ </span>
+  <span class="bread-crumb">/ </span>
   <a
     href="{{ .Site.BaseURL  }}"
     class="pagelink"
     >HOME</a
   >
-  <span class="b"> / </span>
+  <span class="bread-crumb"> / </span>
   <a
   	href="{{ .Site.BaseURL  }}/{{ .Parent.Section }}"
   	class="pagelink"
