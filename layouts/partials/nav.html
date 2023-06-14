@@ -1,0 +1,23 @@
+<div class="nav"><nav>
+  <h1 id="site-name">
+    <a href="/" style="color: #444; font-weight: bold;">
+      <img height="32" width="32" src="/favicon.png" style="vertical-align: bottom;">
+      {{ .Site.Title }}
+    </a>
+  </h1>
+  {{ range .Site.Sections.ByTitle }}
+  <input id="menu-{{ .Title }}" class="acd-check" type="checkbox">
+  <label class="pagelink acd-label" for="menu-{{ .Title }}">{{ .Title }}</label>
+    <ul id="list" class="acd-content">
+    {{ range .Page.Pages.ByTitle }}
+    <li class="list pages lh-copy">
+      <a
+        class="pagelink"
+        href="{{ .RelPermalink }}"
+        >{{ .Title }}</a
+      >
+    </li>
+    {{ end }}
+    </ul>
+  {{ end }}
+</nav></div>

@@ -1,5 +1,14 @@
 {{- partial "head.html" . -}}
-    <div id="content">{{- block "main" . }}{{ -end }}</div>
-    {{- partial "footer.html" . -}}
+  <body
+    lang="{{ .Site.LanguageCode }}"
+    class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
+  >
+    <div id="content" class="container">
+      {{- partial "nav.html" . -}}
+      <main class="main">
+        {{ block "main" . -}}{{ end -}}
+      </main>
+      {{- partial "footer.html" . -}}
+    </div>
   </body>
 </html>

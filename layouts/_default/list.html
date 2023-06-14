@@ -1,45 +1,10 @@
-{{ partial "head.html" . }}
-
-<body
-  lang="{{ .Site.LanguageCode }}"
-  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
->
-  <span class="b">/ </span>
-  <a
-    href="{{ .Site.BaseURL  }}"
-    class="pagelink"
-    >HOME</a
-  >
-  <main>
-  <section id="main" class="mt5">
-  	<h1>
-  		{{ .Title }}
-  	</h1>
-  	<article itemprop="articleBody" id="content" class="w-90 lh-copy">
-		{{ .Content }}
-	  </article>
-    <div><nav>
-        {{ range .Data.Pages.ByTitle }}
-        <input id="menu-{{ .Title }}" class="acd-check" type="checkbox">
-        <label class="pagelink acd-label" for="menu-{{ .Title }}">{{ .Title }}</label>
-
-          <ul id="list" class="acd-content">
-          {{ range .Page.Pages.ByTitle }}
-          <li class="list pages lh-copy">
-            <a
-              class="pagelink"
-              href="{{ .RelPermalink }}"
-              >{{ .Title }}</a
-            >
-          </li>
-          {{ end }}
-          </ul>
-
-        {{ end }}
-    </nav></div>
-  </section>
-  </main>
-
-  {{ partial "footer.html" . }}
-  </body>
-</html>
+{{ define "main" }}
+<section id="main" class="mt5">
+  <h1>
+    {{ .Title }}
+  </h1>
+  <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+  {{ .Content }}
+  </article>
+</section>
+{{ end }}
