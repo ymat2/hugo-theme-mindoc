@@ -1,6 +1,7 @@
 .pagelink {
+	color: #444;
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	text-decoration: none;
 }
 
@@ -11,7 +12,7 @@
 
 .pages::marker {
 	color: #444;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 nav{
@@ -58,8 +59,15 @@ nav label::after {
 	transition: all 0.2s ease-out
 }
 
+nav h1:hover {
+	text-decoration: underline;
+}
 
 nav label:hover {
+	color: #3066a0;
+}
+
+nav a:hover {
 	color: #3066a0;
 }
 
@@ -71,7 +79,7 @@ nav ul {
 
 nav ul li {
   margin-block: 0 !important;
-   line-height: 1.5;
+  line-height: 1.5;
   padding: 0.5em 1em;
   list-style-type: none !important;
 }

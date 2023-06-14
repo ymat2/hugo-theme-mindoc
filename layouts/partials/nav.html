@@ -1,7 +1,10 @@
 <div class="nav"><nav>
   <h1 id="site-name">
     <a href="/" style="color: #444; font-weight: bold;">
-      <img height="32" width="32" src="/favicon.png" style="vertical-align: bottom;">
+      <img
+        height="28" width="28" src="/favicon.png"
+        style="vertical-align: text-bottom; filter: drop-shadow(2px 2px 2px #c0c0c0);"
+      >
       {{ .Site.Title }}
     </a>
   </h1>
@@ -11,11 +14,9 @@
     <ul id="list" class="acd-content">
     {{ range .Page.Pages.ByTitle }}
     <li class="list pages lh-copy">
-      <a
-        class="pagelink"
-        href="{{ .RelPermalink }}"
-        >{{ .Title }}</a
-      >
+      <a class="pagelink" href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
     </li>
     {{ end }}
     </ul>

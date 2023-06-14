@@ -1,22 +1,5 @@
-{{ partial "head.html" . }}
-<body
-  lang="{{ .Site.LanguageCode }}"
-  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
-  itemscope
-  itemtype="http://schema.org/Article"
->
-  <span class="b">/ </span>
-  <a
-    href="{{ .Site.BaseURL  }}"
-    class="pagelink"
-    >HOME</a
-  >
-  <main>
-  <section id="main" class="mt5">
-    <h1 itemprop="name" id="title">404 not found:(</h1>
-  </section>
-  </main>
-
-  {{ partial "footer.html" . }}
-  </body>
-</html>
+{{ define "main" }}
+<section id="main" class="mt5">
+  <h1 itemprop="name" id="title">404 not found :(</h1>
+</section>
+{{ end }}
