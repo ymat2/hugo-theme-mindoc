@@ -29,6 +29,7 @@
     class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
   >
     <div id="content" class="container">
+      {{- partial "header.html" . -}}
       {{- partial "nav.html" . -}}
       <main class="main">
         {{ block "main" . -}}{{ end -}}
