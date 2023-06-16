@@ -59,10 +59,6 @@ nav label::after {
 	transition: all 0.2s ease-out
 }
 
-nav h1:hover {
-	text-decoration: underline;
-}
-
 nav label:hover {
 	color: #3066a0;
 }
@@ -82,4 +78,12 @@ nav ul li {
   line-height: 1.5;
   padding: 0.5em 1em;
   list-style-type: none !important;
+}
+
+header h1 {
+	margin-bottom: 0.1em;
+}
+
+header h1:hover {
+	text-decoration: underline;
 }
