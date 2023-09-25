@@ -3,7 +3,10 @@
   <h1 itemprop="name" id="title">
     {{ .Title }}{{ with .Params.subtitle }} — {{ . }}{{ end }}
   </h1>
-
+  <aside class="toc">
+    Table of Contents:
+    {{ if .Params.toc }}{{ .TableOfContents }}{{ end }}
+  </aside>
   <article itemprop="articleBody" id="content" class="w-90 lh-copy">
     {{ .Content }}
   </article>

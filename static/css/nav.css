@@ -87,3 +87,15 @@ header h1 {
 header h1:hover {
 	text-decoration: underline;
 }
+
+aside.toc {
+	padding: 0.5em;
+	border: solid 1px #ccc;
+}
+
+aside.toc ul li {
+	margin-block: 0 !important;
+  line-height: 1.5;
+  padding: 0.25em 0.5em;
+  list-style-type: none !important;
+}
