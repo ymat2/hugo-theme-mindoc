@@ -216,3 +216,49 @@ kbd {
 	border: solid 1px #ccc;
 	border-radius: 3px;
 }
+
+div {
+  .note {
+  	margin: 0.5rem 0;
+    padding-block: 0.5rem;
+    padding-inline: 2rem 1rem;
+    position: relative;
+    background-color: #1111aa11;
+  }
+
+  .note::before {
+    content: "i";
+    color: #4444bb;
+    font-family: "Ubuntu mono", monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    display: inline-block;
+    position: absolute;
+    left: 0.7rem;
+  }
+
+  .warning {
+  	margin: 0.5rem 0;
+    padding-block: 0.5rem;
+    padding-inline: 2rem 1rem;
+    position: relative;
+    background-color: #aa111111;
+  }
+
+  .warning::before {
+    content: "!";
+    color: #bb4444;
+    font-family: "Ubuntu mono", monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    display: inline-block;
+    position: absolute;
+    left: 0.7rem;
+  }
+}
+
+.warning > p, .note > p {
+	margin: 0.2rem 0;
+}
