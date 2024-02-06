@@ -7,10 +7,11 @@
 	--color-shadow: #c0c0c0;
 	--emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Sans Emoji';
 	--serif: Palatino, serif, var(--emoji);
-	--sans-serif: -apple-system, BlinkMacSystemFont, "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, "Yu Gothic Medium", "Segoe UI", system-ui, sans-serif, var(--emoji);
+	--sans-serif: -apple-system, BlinkMacSystemFont, "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3,
+	              "Yu Gothic Medium", "Segoe UI", system-ui, sans-serif, var(--emoji);
 	--monospace: Menlo, Consolas, Monaco, 'DejaVu Sans Mono', monospace, var(--emoji);
 }
-
+/*
 @font-face {
 	font-family: "Yu Gothic Medium";
 	src: local("Yu Gothic Medium");
@@ -22,7 +23,7 @@
 	src: local("Yu Gothic Bold");
 	font-weight: bold;
 }
-
+*/
 /*CSS grid*/
 .container{
 	display: grid;
@@ -78,6 +79,7 @@
 html {
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+	overflow-y: scroll;
 }
 
 body {

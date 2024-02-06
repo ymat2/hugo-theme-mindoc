@@ -11,11 +11,8 @@
 
       {{ range .Data.Pages.ByTitle }}
       <li class="list pages lh-copy">
-        <a
-          class="pagelink"
-          href="{{ .RelPermalink }}"
-          >{{ .Title }}</a
-        >
+        <a style="font-size: 1.1em; font-weight: bold;"
+           href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>
 
       {{ end }}
